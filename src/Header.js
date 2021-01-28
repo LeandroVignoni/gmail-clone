@@ -1,11 +1,11 @@
 import React from "react";
 import "./Header.css";
 import MenuIcon from "@material-ui/icons/Menu";
-import { Avatar, IconButton } from "@material-ui/core";
+import { IconButton } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import AppsIcon from "@material-ui/icons/Apps";
-import NotificationsIcon from "@material-ui/icons/Notifications";
+import NotificationsIcon from '@material-ui/icons/Notifications';
 
 function Header() {
   return (
@@ -33,7 +33,6 @@ function Header() {
         <IconButton>
           <NotificationsIcon />
         </IconButton>
-        <Avatar />
       </div>
     </div>
   );
