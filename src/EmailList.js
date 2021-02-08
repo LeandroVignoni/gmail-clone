@@ -40,7 +40,7 @@ function EmailList() {
         </div>
       </div>
       <div className="emailList__sections">
-        
+        {/* <Section Icon={Inbox} */}
       </div>
     </div>
   );
