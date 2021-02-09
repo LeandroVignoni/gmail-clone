@@ -3,15 +3,16 @@ import React from "react";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import RedoIcon from "@material-ui/icons/Redo";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import KeyboardHideIcon from '@material-ui/icons/KeyboardHide';
-import SettingsIcon from '@material-ui/icons/Settings';
-import InboxIcon from '@material-ui/icons/Inbox';
-import PeopleIcon from '@material-ui/icons/People';
-import LocalOfferIcon from '@material-ui/icons/LocalOffer';
+import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
+import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import KeyboardHideIcon from "@material-ui/icons/KeyboardHide";
+import SettingsIcon from "@material-ui/icons/Settings";
+import InboxIcon from "@material-ui/icons/Inbox";
+import PeopleIcon from "@material-ui/icons/People";
+import LocalOfferIcon from "@material-ui/icons/LocalOffer";
 import Section from "./Section";
-import "./EmailList.css"
+import "./EmailList.css";
+import EmailRow from "./EmailRow";
 
 function EmailList() {
   return (
@@ -30,7 +31,7 @@ function EmailList() {
           </IconButton>
         </div>
         <div className="emailList__settingsRight">
-        <IconButton>
+          <IconButton>
             <ChevronLeftIcon />
           </IconButton>
           <IconButton>
@@ -45,9 +46,26 @@ function EmailList() {
         </div>
       </div>
       <div className="emailList__sections">
-        <Section Icon={InboxIcon} title="primary" color="red" selected/>
-        <Section Icon={PeopleIcon} title="Social" color="#1A73E8" selected/>
-        <Section Icon={LocalOfferIcon} title="Promotions" color="green" selected/>
+        <Section
+          Icon={InboxIcon}
+          title="primary"
+          color="red"
+          selected
+        />
+        <Section Icon={PeopleIcon} title="Social" color="#1A73E8" />
+        <Section
+          Icon={LocalOfferIcon}
+          title="Promotions"
+          color="green"
+        />
+      </div>
+      <div className="emailList__list">
+        <EmailRow
+          title="Linkedin"
+          subject="Job offer"
+          description="We are interested in hiring you "
+          time="10pm"
+        />
       </div>
     </div>
   );
