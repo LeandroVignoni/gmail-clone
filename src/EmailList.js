@@ -66,6 +66,13 @@ function EmailList() {
           description="We are interested in hiring you "
           time="10pm"
         />
+        <EmailRow
+          title="Linkedin"
+          subject="Job offer"
+          description="We are interested in hiring you "
+          time="10pm"
+        />
+      
       </div>
     </div>
   );
