@@ -80,7 +80,7 @@ function Mail() {
           <p className="mail__time" >10 pm</p>
         </div>
         <div className="mail__message">
-        <p>messagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessmessagemessagemessagemessagemessagemessagemessagemessagemessagemessage</p>
+        <p>This is a test</p>
         </div>
       </div>
     </div>
