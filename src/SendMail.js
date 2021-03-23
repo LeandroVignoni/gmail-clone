@@ -9,7 +9,6 @@ function SendMail() {
   
   const onSubmit = (formData) => {
     console.log(formData)
-    console.log("formData")
   };
   return (
     <div className="sendMail">
@@ -48,7 +47,7 @@ function SendMail() {
         )}
 
         <div className="sendMail__options">
-          <Button className="sendMail__send">Send</Button>
+          <Button className="sendMail__send" type="submit">Send</Button>
         </div>
       </form>
     </div>
