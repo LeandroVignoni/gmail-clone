@@ -9,6 +9,7 @@ function SendMail() {
   
   const onSubmit = (formData) => {
     console.log(formData)
+    console.log("formData")
   };
   return (
     <div className="sendMail">

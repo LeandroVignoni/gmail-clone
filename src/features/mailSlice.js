@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const mailSlice = createSlice({
   name: "mail",
   initialState: {
-    sendMessageIsOpen: false,
+    sendMessageIsOpen: true,
   },
   reducers: {
     openSendMessage: (state) => {
@@ -21,6 +21,6 @@ export const {
 } = mailSlice.actions;
 
 export const selectSendMessageIsOpen = (state) =>
-  state.email.sendMessageIsOpen;
+  state.mail.sendMessageIsOpen;
 
 export default mailSlice.reducer;
