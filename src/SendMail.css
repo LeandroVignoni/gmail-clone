@@ -56,10 +56,8 @@
 }
 
 .sendMail__error {
-  background-color: white;
   color: red;
   text-align: right;
+  background-color: white;
   padding: 2px;
 }
-
-
